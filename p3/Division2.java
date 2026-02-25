@@ -10,7 +10,7 @@ public static void rec2 (int n)
 	if (n<=0) cont++;
 	else
 	{ 
-		for (int i=1;i<n;i++) cont++ ;  //O(n)  
+		for (int i=1;i<n;i++) cont++ ;  //O(n log n)  
 		rec2 (n/2);
 		rec2 (n/2);
 	}   
