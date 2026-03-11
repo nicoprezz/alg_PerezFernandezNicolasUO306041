@@ -1,8 +1,0 @@
-{
-    "java.project.sourcePaths": [
-        "colorear_grafo\\src"
-    ],
-    "java.project.referencedLibraries": [
-        "colorear_grafo\\lib\\json-simple-1.1.1.jar"
-    ]
-}
