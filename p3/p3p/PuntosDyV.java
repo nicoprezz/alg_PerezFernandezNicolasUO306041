@@ -6,6 +6,8 @@ public class PuntosDyV {
     static double distanciaMinimaGlobal = Double.MAX_VALUE;
     static double[] mejorPunto1 = null;
     static double[] mejorPunto2 = null;
+    static final int X_ORDERING = 0;
+    static final int Y_ORDERING = 1; 
 
     public static void main(String[] args) {
         if (args.length == 0) {
@@ -17,7 +19,7 @@ public class PuntosDyV {
             String rutaFichero = args[0];
             double[][] puntos = LectorFicheros.leerFichero(rutaFichero);
 
-            rapirec(puntos, 0, puntos.length - 1, 0);
+            rapirec(puntos, 0, puntos.length - 1, X_ORDERING);
 
             recursivoDyV(puntos, 0, puntos.length - 1);
 
@@ -53,7 +55,7 @@ public class PuntosDyV {
         }
 
         if (numPuntosFranja > 1) {
-            rapirec(franja, 0, numPuntosFranja - 1, 1);
+            rapirec(franja, 0, numPuntosFranja - 1, Y_ORDERING);
         }
 
         for (int i = 0; i < numPuntosFranja; i++) {
