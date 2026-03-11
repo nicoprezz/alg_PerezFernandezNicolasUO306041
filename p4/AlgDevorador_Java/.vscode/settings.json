@@ -1,8 +1,0 @@
-{
-    "java.project.sourcePaths": [
-        "algDevorador_Java\\src"
-    ],
-    "java.project.referencedLibraries": [
-        "algDevorador_Java\\lib\\json-simple-1.1.1.jar"
-    ]
-}
